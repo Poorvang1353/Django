@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<!DOCTYPE html>
+
+    <h1>Login Page</h1>
+    {% for msg in messages %}
+        <h2>{{msg}}</h2>
+    {% endfor %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="">Username</label>
+        <input type="text" name="username"><br>
+
+        <label for="">Password</label>
+        <input type="password" name="password"><br>
+
+        <input type="submit">
+    </form>
+{% endblock body %}

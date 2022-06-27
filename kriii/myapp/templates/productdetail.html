@@ -1,0 +1,27 @@
+ {% extends 'base.html' %}
+{% block body %}
+<div class="col-sm-6 col-md-4 col-lg-4">
+    <div class="box">
+       <div class="option_container">
+          <div class="options">
+             <a href="" class="option1">
+             {{i.name}}
+             </a>
+            </div>
+       </div>
+       <div class="img-box">
+         <img src="{{i.image.url}}" alt="">
+       </div>
+       <div class="detail-box">
+          <h5>
+            {{i.name}}
+          </h5>
+          <h6>
+             ${{i.sell_price}}
+          </h6>
+       </div>
+    </div>
+ </div>
+
+
+ {% endblock body %} 
